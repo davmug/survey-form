@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modulo di Sondaggio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Modulo di Sondaggio Gratuito</h1>
+    <p id="description">Grazie per aver dedicato del tempo a compilare questo modulo!</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Inserisci il tuo nome" required />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" placeholder="Inserisci la tua email" required />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Età (opzionale):</label>
+        <input type="number" id="number" min="13" max="99" placeholder="Età" />
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown">Quale opzione descrive meglio il tuo ruolo attuale?</label>
+        <select id="dropdown">
+          <option value="" disabled selected>(Seleziona una opzione)</option>
+          <option value="studente">Studente</option>
+          <option value="lavoratore">Lavoratore</option>
+          <option value="altro">Altro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Ti piacerebbe raccomandare questo modulo ad un amico?</p>
+        <label> <input type="radio" name="raccomandazione" value="sicuramente" id="raccomandazione-sicuramente" /> Sicuramente </label>
+        <label> <input type="radio" name="raccomandazione" value="forse" id="raccomandazione-forse" /> Forse </label>
+        <label> <input type="radio" name="raccomandazione" value="non-so" id="raccomandazione-non-so" /> Non so </label>
+      </div>
+      <div class="form-group">
+        <p>Cosa ti piace di più di questo modulo?</p>
+        <label> <input type="checkbox" name="gradimento" value="interfaccia" id="gradimento-interfaccia" /> Interfaccia Utente </label>
+        <label> <input type="checkbox" name="gradimento" value="semplicita" id="gradimento-semplicita" /> Semplicità </label>
+        <label> <input type="checkbox" name="gradimento" value="utilita" id="gradimento-utilita" /> Utilità </label>
+      </div>
+
+      <div class="form-group">
+        <label for="commenti">Hai qualche commento o suggerimento?</label>
+        <textarea id="commenti" placeholder="Inserisci qui i tuoi commenti..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit">Invia</button>
+      </div>
+    </form>
+  </body>
+</html>
